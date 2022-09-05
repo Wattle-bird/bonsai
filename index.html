@@ -2,13 +2,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Bonsai - Javascript Playground</title>
   <style>
-    * {
-      font-size: 14px;
-    }
+
 
     body {
       margin: 0;
       font-family: sans-serif;
+      font-size: 14px;
     }
 
     #container {
@@ -31,11 +30,15 @@
     #toolbar {
       display: flex;
       justify-content: end;
+      padding-right: 40px;
+      min-height: 40px;
+      align-items: center;
     }
 
     #toolbar * {
       padding: 5px;
       border: 1px solid grey;
+      font-size: 12px;
     }
 
     .contain {
@@ -72,4 +75,7 @@
       $('#editor').classList.toggle('hide');
     }
   </script>
+  <script src="https://cdn.jsdelivr.net/npm/eruda"></script>
+  <script>eruda.init()</script>
+
 </body>
