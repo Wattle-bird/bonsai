@@ -1,0 +1,24 @@
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<pre id=source>
+
+## CSS
+- `.contain`
+  - Uses `object-fit` to fit within the display cozily.
+
+
+## JS
+- `$`
+  - shorthand for `document.querySelector`
+
+
+## HTML
+- `#display`
+- `#editor`
+- `#toolbar`
+
+
+</pre>
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script>
+document.body.innerHTML = marked.parse(document.getElementById('source').innerHTML);
+</script>
