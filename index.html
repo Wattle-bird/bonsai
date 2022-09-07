@@ -45,6 +45,11 @@
       object-fit: contain;
     }
 
+    .crisp {
+      image-rendering: crisp-edges;
+      image-rendering: pixelated;
+    }
+
     .hide {
       display: none;
     }
@@ -56,15 +61,13 @@
     <div id="display"></div>
     <textarea id="editor" spellcheck=false inputmode="email" autocapitalize="none"></textarea>
     <div id="toolbar">
-      <a href="docs.md.html">Docs</a>
-      <a href="https://github.com/Wattle-bird/bonsai">Github</a>
+      <a href="https://github.com/Wattle-bird/bonsai" target="_blank">Docs & Source</a>
       <button onclick="toggleEditor()">Toggle Editor</button>
       <button onclick="execute()">Execute</button>
     </div>
   </div>
+  <script src="library.js"></script>
   <script>
-    window.$ = document.querySelector.bind(document);
-
     function execute() {
       eval($('#editor').value);
     }
