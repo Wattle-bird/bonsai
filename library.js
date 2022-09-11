@@ -1,12 +1,11 @@
 let $ = document.querySelector.bind(document);
 
 class FrameBuffer {
-  constructor(width, height) {
-    this.width = width;
-    this.height = height;
-    $('#display').innerHTML = `<canvas id=c class="contain crisp" width=${width} height=${height}>`
-    this.ctx = $('#c').getContext('2d');
-    this.imageData = this.ctx.createImageData(width, height);
+  constructor(canvas) {
+    this.width = canvas.width;
+    this.height = canvas.height;
+    this.ctx = canvas.getContext('2d');
+    this.imageData = this.ctx.createImageData(this.width, this.height);
     this.data = new Uint32Array(this.imageData.data.buffer);
   }
 
