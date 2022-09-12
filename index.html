@@ -72,6 +72,8 @@
   </div>
   <script src="library.js"></script>
   <script>
+    let $ = document.querySelector.bind(document);
+
     function execute() {
       eval($('#editor').value);
     }

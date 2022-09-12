@@ -19,15 +19,6 @@ See index.html and library.js for more details
 ### JS
 - `$`
   - shorthand for `document.querySelector`
-- `class FrameBuffer(canvas)`
-  - Pixel color is 32 bit numbers: 0xAABBGGRR
-  - `get(x,y)`
-  - `set(x,y,color)`
-  - `shade((x,y) => color)`
-  - `update()`
-- `rgb2int(r,g,b,a)`
-  - `a` is optional, defaults to 0xff
-  - returned format is 0xAABBGGRR
 
 
 ### HTML
